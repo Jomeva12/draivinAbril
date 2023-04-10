@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/white"
+    android:gravity="center"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/degradado_derecho">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_largo_sin_fondo"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginStart="15dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fullBlack"
+        android:layout_marginEnd="15dp"
+        android:text="Visible en: " />
+
+    <TextView
+        android:id="@+id/ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/fullBlack" />
+</LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/cerrarPoster"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/photoPerfilPosts"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity=""
+                    android:src="@drawable/person_24"
+                    app:civ_border_color="#BFBABA"
+                    app:civ_border_width="2dp"
+                    app:civ_circle_background_color="@color/colorPrimary2" />
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                    android:id="@+id/nombrePost"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/gris"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnpublicar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_background"
+                    android:text="Publicar"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:backgroundTint="@color/colorPrimary2" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--*****************************************-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimaryDarkText"
+            app:cardCornerRadius="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--//////////////////////-->
+                    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                        android:id="@+id/txtDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusedByDefault="true"
+                        android:gravity="top"
+                        android:hint="Descripción..."
+                        android:maxHeight="500sp"
+                        android:minHeight="50dp"
+                        android:textColor="@color/gris"
+                        android:textColorHint="@color/gris"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/verImagen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="300dp"
+                        android:visibility="visible" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardtimeRecording"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/white"
+                        android:elevation="80dp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="50dp">
+
+                        <TextView
+                            android:id="@+id/timeRecording"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/gris"
+                            android:text="00:00"
+                            android:textSize="27dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/eliminarAudio"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginStart="50dp"
+                        android:src="@drawable/x"
+                        android:visibility="gone" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardReproducir"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:elevation="20dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/white2"
+                        app:cardCornerRadius="30dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnPlayAudio"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/btn_play"
+                                android:clickable="true"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                app:backgroundTint="@color/colorPrimary" />
+
+                            <SeekBar
+                                android:id="@+id/seekReproduccion"
+                                android:layout_width="220dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:backgroundTint="@color/colorAccent"
+                                android:progress="0"
+                                android:progressBackgroundTint="@color/red"
+                                android:progressTint="@color/colorMenu"
+                                android:thumbTint="@color/red"
+                                android:tickMarkTint="@color/red" />
+
+                            <TextView
+                                android:id="@+id/time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="00:00"
+                                android:textColor="@color/gris"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <FrameLayout
+                        android:id="@+id/frameVideoPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <VideoView
+                            android:id="@+id/videoViewPost"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <View
+                            android:id="@+id/btnPlayPost"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:alpha="0.7"
+                            android:background="@drawable/circular_view"
+                            android:backgroundTint="@color/gris" />
+
+                        <ImageView
+                            android:id="@+id/imageVideoPost"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/play" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearImagenAudio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/lottieAnimationCamera"
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:background="@android:color/transparent"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="camera_lottie.json"
+                            app:lottie_imageAssetsFolder="assets"
+                            app:lottie_loop="true" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/grabadorMic"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            app:lottie_autoPlay="false"
+                            android:clickable="true"
+                            app:lottie_fileName="microfono_off.json"
+                            app:lottie_imageAssetsFolder="assets"
+                            app:lottie_loop="true" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+     <com.google.android.gms.ads.AdView
+            android:id="@+id/cuadro_postAds"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1498245539124562/5210482549"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

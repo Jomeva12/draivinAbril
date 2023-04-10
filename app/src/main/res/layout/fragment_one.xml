@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentOne"
+    tools:context=".activities.activities.FragmentOne">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorazulfondo">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/reciclerViewEventos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    app:layout_behavior="com.google.android.material.appbar.appBarLayout$ScrollingViewBehavior" />
+
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loading"
+                android:visibility="gone"
+                android:layout_width="282dp"
+                android:layout_height="282dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="loading.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
+
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/activityperfilpostAds"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-1498245539124562/8215133415"/>
+</FrameLayout>
+
+   </LinearLayout>
+
+
+<!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_margin="@dimen/fab_margin"
+    android:layout_gravity="start|top"
+    android:src="@drawable/ic_add"
+    android:backgroundTint="@color/colorAcent"/>-->
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start|top"
+        android:backgroundTint="@color/colorAcent"
+        app:cardCornerRadius="30dp"
+        android:elevation="20dp"
+        android:visibility="gone"
+        android:outlineAmbientShadowColor="@color/red"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_add"
+           android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/abrirPoster"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-8dp"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="btn_json.json"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true" >
+
+    </com.airbnb.lottie.LottieAnimationView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="+"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <!--<ImageView
+        android:id="@+id/abrirPoster"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="23dp"
+        android:layout_gravity="start|top"
+        android:src="@drawable/add_map"
+        android:backgroundTint="@color/fui_transparent"/>-->
+
+
+
+   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="end|top"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/colorAccent"/>-->
+
+
+
+
+
+</FrameLayout>
+
+

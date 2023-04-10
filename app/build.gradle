@@ -1,0 +1,169 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android-extensions'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+
+    compileSdkVersion 31
+    //buildToolsVersion "30.0.2"
+    defaultConfig {
+        applicationId "com.jomeva.driving"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 12
+        versionName "1.011"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+       /* resValue("string", "default_web_client_id", "54468161676-q3q4qhct9on8cmur3qjcdega7mk7ri8f.apps.googleusercontent.com")*/
+    }
+
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    /*compileOptions {
+        sourceCompatibility "1.8"
+        targetCompatibility "1.8"
+    }*/
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    viewBinding{
+         enabled=true
+     }
+    /*configurations{
+        all*.exclude group: 'com.google.guava',module: 'listeneablefuture'
+    }*/
+}
+
+dependencies {
+    //capturarimagen y title en webView
+    implementation 'org.jsoup:jsoup:1.14.2'
+    //error en pendingitent de S+
+    implementation 'androidx.work:work-runtime-ktx:2.7.0'
+//google admob
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+    // implementation 'com.google.android.gms:play-services-ads:19.7.0'
+   // com.google.android.gms:play-services-ads:21.5.0
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    //login with facebook
+    //implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    ////////////////////////firebase
+    implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    //crash
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    //////////////////////////////////////////////////////////////////
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+      implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-database:19.1.0'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+    //implementation 'com.google.cloud:google-cloud-vision:2.3.0'
+
+    implementation 'com.firebase:geofire-android:2.2.0'
+    implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+//carview con border
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+//implementation 'com.google.cloud:google-cloud-vision'
+
+    //implementation 'com.google.cloud:google-cloud-vision-image-annotator:1.29.0'
+    implementation platform('com.google.cloud:libraries-bom:26.1.5')
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+   // implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    //implementation 'androidx.core:core:1.7.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+   // implementation 'com.android.support:support-compat:28.0.0'
+
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    //noinspection GradleCompatible
+    //hice comentario al de abajo porque el collapsing es con la de 29
+    //implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:design:31.0.0'
+    implementation 'io.github.florent37:shapeofview:1.4.7'
+
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+    //dependencia de imagenes a firebase
+    //comprime las imagenes
+    implementation 'id.zelory:compressor:2.1.0'
+    //imagenes desde url
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //image ciruclares
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+       //emoji
+    implementation 'com.github.hani-momanii:SuperNova-Emoji:1.1'
+    //messaging
+    //para IA en imagenes
+
+//peticiones http
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+
+    implementation "androidx.appcompat:appcompat:1.0.0"
+    //code country para login
+    implementation 'com.hbb20:ccp:2.5.0'
+    //lottie
+    implementation 'com.airbnb.android:lottie:3.7.1'
+    //imagen redondeada
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    //para refrescar scroll
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    //animacion card reporte
+    implementation('com.github.bumptech.glide:glide:3.6.1')
+//jitsi para llamadas
+    //https://www.youtube.com/watch?v=21H7uPS8_3Y
+    //https://jitsi.github.io/handbook/docs/dev-guide/dev-guide-android-sdk/
+   // implementation ('org.jitsi.react:jitsi-meet-sdk:3.+') { transitive = true }
+    //selector de multi image
+    implementation  'com.fxn769:pix:1.5.6'
+//viewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    //para reducir imagen o video
+   /* implementation 'com.github.abhidiwakar:AnstronCoreHelper:1.1'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.4'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.22'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6'*/
+//otra biblioteca para comprimir v ideos
+  //  implementation 'com.writingminds:FFmpegAndroid:0.3.2'
+
+  //  implementation 'com.arthenica:mobile-ffmpeg-full:4.4'
+//reconocimiento
+   // implementation 'com.github.eddydn:EDMTDevCognitiveFace:1.7'
+
+}

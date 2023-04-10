@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_mi_ciudad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:background="@drawable/degradado_derecho"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                android:src="@drawable/logo_largo_sin_fondo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/degradado_derecho"></LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="28sp"
+    android:elevation="10dp"
+    android:layout_gravity="center|top"
+    android:layout_marginTop="90dp"
+    android:text="Política de privacidad" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/white"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:background="@color/colorPrimaryDarkText"
+                android:orientation="vertical">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/layout_bg"
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/gris"
+                        android:autoLink="web"
+                        android:text="En DRAIVIN, valoramos la privacidad de nuestros usuarios. \nEsta política de privacidad describe cómo recopilamos, utilizamos, compartimos y protegemos la información personal de nuestros usuarios, puede consultarla en nuestra página https://draivin.com/politicadeprivacidad.html.
+\n\nInformación Recopilada:\n\n•Imágenes y videos:\nRecopilamos imágenes y videos compartidos con los usuarios, los cuales el usuario puede eliminar cuando desee.\n\n•Audio:\nRecopilamos audio grabado por el micrófono cuando el usuario decide compartir con otros usuarios, los cuales el usuario creador puede eliminar cuando desee.\n\n•Información personal:\nEn DRAIVIN recopilamos información personal de nuestros usuarios, como el nombre del usuario, con el fin de brindar un servicio personalizado, mejorado y pueda identificarse en la comunidad de actores viales.\n\n•Datos de contacto:\nRecopilamos información de contacto, como dirección de correo electrónico, solo para autenticar a los usuarios.
+\n\n•Uso de la Información:\nUtilizamos la información de ubicación para brindar información en tiempo real sobre el tráfico y eventos en su ruta de viaje solo en tiempo de ejecución y esta no es almacenada como tampoco usada cuando la aplicación está cerrada.\n\n•Su ubicación solo será vista por usted mismo, ningún otro usuario o del equipo de DRAIVIN tiene acceso a esta información.\n\n•Utilizamos las imágenes  recopiladas para brindar funcionalidades en DRAIVIN como compartir con otros usuarios por medio de publicaciones, foto de perfil entre otros.\n\n•Utilizamos el audio recopilado para brindar funcionalidades en DRAIVIN como compartir con otros usuarios para informarlos de eventos y novedades en las vías.
+\n\nCompartir información con terceros:\n•No compartimos ni vendemos información personal de nuestros usuarios a terceros.\n\nProtección de la información:\n•Utilizamos cifrado para proteger la información de nuestros usuarios.\n\n•Solo los usuarios pueden manipular su información.\n\nDerechos de los usuarios:\n•Los usuarios tienen derecho a acceder, corregir o eliminar sus datos personales en cualquier momento.\n\n•Los usuarios en el momento que deseen pueden darse de baja en la aplicación, esto quiere decir que desaparecerá todo registro de la base de datos.\n\nAnuncios mostrados:\n•Nuestra aplicación muestra anuncios publicitarios gestionados por Google Admob para el apoyo del equipo de desarrollo y mantenimiento de servidores.\n\n•Los anuncios mostrados pueden incluir anuncios gráficos (banner) y anuncios en formato de interstitial.
+\n\n•Los anuncios mostrados pueden ser basados en intereses o comportamiento del usuario, pero no se basan en información personal identificable.\n\nCambios en la política de privacidad:\n•Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Si hacemos cambios significativos, notificaremos a nuestros usuarios mediante una notificación en la aplicación o mediante un correo electrónico.\n\nSi tiene preguntas o inquietudes sobre esta política de privacidad, no dude en ponerse en contacto con nosotros a través de nuestro correo electrónico ingwebmelendez@gmail.com o nuestra página de contacto en nuestra aplicación.
+
+"   />
+
+
+
+                </androidx.core.widget.NestedScrollView>
+
+
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/checkbox_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="60dp"
+                android:text="He leído la política"
+                android:checked="false"
+                android:textColor="@color/gris"/>
+            <Button
+                android:id="@+id/btnPolitica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boton_azul_redondo"
+                android:text="Aceptar"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:backgroundTint="#156AAE" />
+        </androidx.cardview.widget.CardView>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutBack"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:background="@color/fui_transparent"
+        android:paddingTop="5dp">
+
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="15dp"
+                android:gravity="left"
+                android:src="@drawable/ic_back" />
+
+
+
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/cargando"
+        android:layout_width="300dp"
+        android:layout_height="205dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="cargando_auth.json"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

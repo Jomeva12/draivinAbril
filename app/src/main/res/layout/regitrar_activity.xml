@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_mi_ciudad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imagenPerfil2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="110dp"
+            android:layout_gravity="center|end"
+            android:layout_marginBottom="100dp"
+            android:elevation="41dp"
+            android:src="@drawable/ic_cam" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagenPerfil"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:elevation="40dp"
+            android:layout_marginBottom="150dp"
+            android:src="@drawable/person_24"
+            app:civ_border_color="@color/grisClaro"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="#156AAE" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:background="@drawable/degradado_derecho"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="80dp"
+                android:elevation="10dp"
+                android:src="@drawable/logo_largo_sin_fondo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/degradado_derecho">
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_gravity="top"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="30dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDarkText"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="205dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_azul_redondo"
+                        android:drawableLeft="@drawable/ic_person_azul"
+                        android:drawablePadding="16dp"
+                        android:hint="Nombre"
+                        android:padding="3dp"
+                        android:layout_marginTop="50dp"
+                        android:text=""
+                        android:textColor="@color/gris"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/registrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/boton_azul_redondo"
+                    android:text="Guardar"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:backgroundTint="#156AAE" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/cargandoAuth"
+            android:layout_width="300dp"
+            android:layout_height="205dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="cargando_auth.json"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_loop="true" />
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

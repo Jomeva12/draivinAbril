@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/drawable/border_circular_view.xml" value="0.2025" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/drawable/circular_view.xml" value="0.2025" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/drawable/circular_visto.xml" value="0.3075" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/drawable/degradado_azul.xml" value="0.3675" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/drawable/degradado_invertido.xml" value="0.3675" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/drawable/ic_cam.xml" value="0.2295" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/drawable/ic_edit_24.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/drawable/seek_bar_style.xml" value="0.3769230769230769" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_auth.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_chat.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_config_report.xml" value="0.3548895899053628" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_confirm_image_send.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_home.xml" value="0.2033514492753623" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_llamada.xml" value="0.2033514492753623" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_mapa_propina.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_perfil.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_perfil_post.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_perfiledit.xml" value="0.2033514492753623" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_post.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_post_detail.xml" value="0.2033514492753623" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_propina_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_propinas.xml" value="0.35643115942028986" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_show_video.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_splash_loading.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/activity_validar_phone.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cardview_chats.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cardview_comentario_propina.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cardview_comentarios.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cardview_message.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cardview_post.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cardview_propinas.xml" value="0.234375" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/check_internet_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_actualizar_ciudad.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_cargando.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_comentario_propinas.xml" value="0.2033514492753623" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_comentarios_eventos_transparentes.xml" value="0.25455927051671734" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_datos_reporte.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_eliminar_reporte.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_mensaje_check.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_moneda.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_opciones_mapa.xml" value="0.2033514492753623" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_post.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_post_propina.xml" value="0.35643115942028986" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_preguntar.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_propina_mapa.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_reporte_mapa.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/cuadro_update_perfil.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/custom_chat_toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/fragment_detalle.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/fragment_four.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/fragment_image_pager.xml" value="0.2033514492753623" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/fragment_one.xml" value="0.27917981072555204" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/fragment_three.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/fragment_two.xml" value="0.2033514492753623" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/layout_bottom.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/layout_bottom_mapa_propina.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/layout_opciones_mapa.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/layout_post.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/list_item_ciudad.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/layout/regitrar_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/menu/menu_mensaje.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/menu/menu_my_perfil.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin 20220705/app/src/main/res/mipmap-anydpi-v26/ic_send2.xml" value="0.3828125" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/drawable/bubble_corner_left.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/drawable/bubble_corner_right.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/drawable/degradado_invertido.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/drawable/dialog_bottom.xml" value="0.19583333333333333" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/activity_chat.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/activity_mapa_propina.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/activity_propina_detail.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cardview_chats.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cardview_comentario_propina.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cardview_comentarios.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cardview_message.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cardview_propinas.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cuadro_comentario_propinas.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cuadro_comentarios_eventos_transparentes.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cuadro_preguntar.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/cuadro_propina_mapa.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/fragment_four.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/fragment_one.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/fragment_three.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/fragment_two.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/layout_bottom.xml" value="0.1796875" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/layout_bottom_mapa_propina.xml" value="0.1796875" />
+        <entry key="..\:/AndroidStudioProject/Draivin/app/src/main/res/layout/layout_opciones_mapa.xml" value="0.1796875" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/drawable/boton_azul_redondo.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/activity_auth.xml" value="0.16168478260869565" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/activity_chat.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/activity_home.xml" value="0.16168478260869565" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/activity_mapa_propina.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/activity_perfil.xml" value="0.16168478260869565" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/activity_propina_detail.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/activity_validar_phone.xml" value="0.18931159420289856" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cardview_comentario_propina.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cardview_post.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cardview_propinas.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cuadro_cargando.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cuadro_datos_reporte.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cuadro_mensaje_check.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cuadro_moneda.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cuadro_post.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cuadro_preguntar.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cuadro_propina_mapa.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/cuadro_reporte_mapa.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/fragment_four.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/fragment_two.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/layout_bottom.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/layout_bottom_mapa_propina.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving/app/src/main/res/layout/regitrar_activity.xml" value="0.18931159420289856" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/bg_label.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/bg_transparente.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/boton_redondo.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/bubble_corner_left.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/bubble_corner_right.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/circular_view.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ctr_bg.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_cam.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.11614583333333334" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_menu.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_menu2.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_message.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_person_azul.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_phone.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_send.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_send_blanco.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/ic_sendfondo.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/layout_bg.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/menu_open.xml" value="0.13697916666666668" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/drawable/play.xml" value="0.16944444444444445" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_auth.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_chat.xml" value="0.17617753623188406" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_confirm_image_send.xml" value="0.16847826086956522" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_llamada.xml" value="0.14" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_mapa_propina.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_perfil.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_perfil_post.xml" value="0.17617753623188406" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_perfiledit.xml" value="0.15185185185185185" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_post.xml" value="0.18070652173913043" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_post_detail.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_propina_detail.xml" value="0.16304347826086957" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_propinas.xml" value="0.19655797101449277" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_responder_llamada.xml" value="0.12" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_show_video.xml" value="0.10052083333333334" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/activity_splash_loading.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cardview_chats.xml" value="0.17300724637681159" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cardview_comentarios.xml" value="0.17617753623188406" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cardview_message.xml" value="0.17300724637681159" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cardview_post.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cardview_propinas.xml" value="0.18070652173913043" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cargando_evento.xml" value="0.18070652173913043" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_actualizar_ciudad.xml" value="0.17617753623188406" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_cargando.xml" value="0.18070652173913043" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_datos_reporte.xml" value="0.17300724637681159" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_moneda.xml" value="0.15185185185185185" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_opciones_mapa.xml" value="0.1852355072463768" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_post.xml" value="0.17346014492753623" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_preguntar.xml" value="0.17617753623188406" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_reporte_mapa.xml" value="0.1852355072463768" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/cuadro_update_perfil.xml" value="0.17346014492753623" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/fragment_image_pager.xml" value="0.21" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/fragment_one.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/fragment_three.xml" value="0.17300724637681159" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/fragment_two.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/layout_bottom_mapa_propina.xml" value="0.17346014492753623" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/layout_opciones_mapa.xml" value="0.1852355072463768" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/layout/list_item_ciudad.xml" value="0.17617753623188406" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/menu/menu_my_perfil.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/Driving2/app/src/main/res/menu/menupost.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/back_color_full_black.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/bg_label.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/boton_azul_redondo.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/boton_redondo.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/bubble_corner_left.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/bubble_corner_right.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/circular_view.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/ctr_bg.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/degradado_invertido.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/ic_add.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/ic_person_azul.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/layout_bg.xml" value="0.16944444444444445" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/drawable/wifi_off.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/activity_chat.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/activity_confirm_image_send.xml" value="0.16530797101449277" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/activity_llamada.xml" value="0.178125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/activity_perfil_post.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/activity_post_detail.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/cardview_chats.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/cardview_comentarios.xml" value="0.13858695652173914" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/cardview_message.xml" value="0.16032608695652173" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/cardview_post.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/cardview_propinas.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/check_internet_dialog.xml" value="0.16485507246376813" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/cuadro_comentarios_eventos_transparentes.xml" value="0.14" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/cuadro_moneda.xml" value="0.16032608695652173" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/fragment_image_pager.xml" value="0.16530797101449277" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/fragment_one.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/fragment_three.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/layout/fragment_two.xml" value="0.178125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/menu/menupost.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/mipmap-anydpi-v26/launcher.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProject/GithubTransito/Draivin/app/src/main/res/mipmap-anydpi-v26/launcher_round.xml" value="0.2203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

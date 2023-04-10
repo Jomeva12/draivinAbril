@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/degradado_derecho">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo_largo_sin_fondo"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cerrar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:src="@drawable/x" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/botonesreportes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/reporteRapido"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Reporte rapido"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorPrimary2" />
+
+            <Button
+                android:id="@+id/btnDetallado"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:text="Reporte detallado"
+                app:backgroundTint="@color/gris" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reporteDetallado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/descripcion"
+                    android:layout_width="0dp"
+                    android:textColor="@color/gris"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Descripcion opcional" />
+
+            </LinearLayout>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/verImagen"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_cam"
+                app:riv_corner_radius="0dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkbox_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:checked="false"
+                    android:textSize="17sp"
+                    android:text="Crear post" />
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/fotoReportePost"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="camera_lottie.json"
+                    app:lottie_imageAssetsFolder="assets"
+                    app:lottie_loop="true" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnCrearReporte"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Crear reporte"
+                app:backgroundTint="@color/gris" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

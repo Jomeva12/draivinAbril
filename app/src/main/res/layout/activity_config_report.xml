@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMessageReceiver"
+    tools:context=".activities.activities.ConfigReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Configuración de reportes"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Manipúle las barra de cada tipo de reporte para que sea alertado según la distancia en metros programada por usted."
+            android:textColor="@color/colorPrimary"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cate_bache" />
+            <!--<TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Baches"/>-->
+            <SeekBar
+                android:id="@+id/seekBache"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorAccent"
+                android:max="300"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:tickMarkTint="@color/white" />
+
+            <TextView
+                android:id="@+id/distanciaBache"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/alertaBache"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/campana_on" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+          <!--  <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Puesto de control"
+                android:textColor="@color/white" />-->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cate_reten" />
+
+            <SeekBar
+                android:id="@+id/seekReten"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:max="500"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:tickMarkTint="@color/white" />
+
+            <TextView
+                android:id="@+id/distanciaReten"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary" />
+            <ImageView
+                android:id="@+id/alertaReten"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/campana_on" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cámara"
+                android:textColor="@color/white" />-->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cate_camara" />
+            <SeekBar
+                android:id="@+id/seekCamara"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:max="500"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:tickMarkTint="@color/white" />
+
+            <TextView
+                android:id="@+id/distanciaCamara"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary" />
+            <ImageView
+                android:id="@+id/alertaCamara"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/campana_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="vía cerrada"
+                android:textColor="@color/white" />-->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cate_cerrada" />
+            <SeekBar
+                android:id="@+id/seekCerrada"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:max="500"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:tickMarkTint="@color/white" />
+
+            <TextView
+                android:id="@+id/distanciaCerrada"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary" />
+            <ImageView
+                android:id="@+id/alertaCerrada"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/campana_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accidente/trancón"
+                android:textColor="@color/white" />-->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cate_accidente" />
+            <SeekBar
+                android:id="@+id/seekAccidente"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:max="500"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:tickMarkTint="@color/white" />
+
+            <TextView
+                android:id="@+id/distanciaAccidente"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary" />
+            <ImageView
+                android:id="@+id/alertaAccidente"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/campana_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+         <!--   <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ruta peligrosa"
+                android:textColor="@color/white" />-->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cate_peligro" />
+            <SeekBar
+                android:id="@+id/seekPeligrosa"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:max="300"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:tickMarkTint="@color/white" />
+
+            <TextView
+                android:id="@+id/distanciaPeligrosa"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary" />
+            <ImageView
+                android:id="@+id/alertaPeligrosa"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/campana_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+           <!-- <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reporte especial"
+                android:textColor="@color/white" />-->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cate_especial" />
+
+            <SeekBar
+                android:id="@+id/seekEspecial"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:max="300"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:tickMarkTint="@color/white" />
+
+            <TextView
+                android:id="@+id/distanciaEspecial"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary" />
+            <ImageView
+                android:id="@+id/alertaEspecial"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/campana_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Otros usuarios"
+                android:textColor="@color/white" />-->
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_car" />
+            <SeekBar
+                android:id="@+id/seekUsuarios"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:max="15000"
+                android:min="1000"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:tickMarkTint="@color/white" />
+
+            <TextView
+                android:id="@+id/distanciaUsuarios"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary" />
+            <ImageView
+                android:id="@+id/alertaUsuarios"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-5dp"
+                android:src="@drawable/campana_on" />
+        </LinearLayout>
+
+    </LinearLayout>
+ <com.google.android.gms.ads.AdView
+        android:id="@+id/activity_config_reportAds"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1498245539124562/9286578489"
+        />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/degradado_derecho"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:gravity="left"
+            android:src="@drawable/ic_back" />
+
+
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

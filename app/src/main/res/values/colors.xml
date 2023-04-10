@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#031836</color>
+    <color name="colorPrimary2">#156AAE</color>
+    <color name="colorBackFragment">#707783</color>
+    <color name="colorGrisTransparente">#23FFFFFF</color>
+    <color name="colorComentario">#2F4977</color>
+    <color name="colorMessage">#546E7A</color>
+    <color name="colorAcent">#4BCE50</color>
+    <color name="colorazulClaro">#447A8C</color>
+    <color name="colorazulfondo">#1C3259</color>
+    <color name="colorMenu">#3E6FC6</color>
+    <color name="colorfondoChat">#A3B3BB</color>
+    <color name="colorMessageReceiver">#F3F3F3</color>
+    <color name="grayLoading">#CBC3CF</color>
+    <color name="colorPrimaryText">@color/gris</color>
+    <color name="colorPrimaryDark">#0099ff</color>
+    <color name="colorPrimaryDarkText">@color/white</color>
+    <color name="colorAccent">#8630BF</color>
+    <color name="gris">#2A2E30</color>
+    <color name="fullBlack">#000000</color>
+    <color name="red">#F30606</color>
+    <color name="amarillo">#9AFFEB3B</color>
+    <color name="verde">#10A623</color>
+    <color name="grisClaro">#E0E7EA</color>
+    <color name="salmon">#FFAB40</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white2">#CED6D5</color>
+
+<!--colores para sin internet-->
+    <color name="colorPrimaryDemo">#554911</color>
+<!--colores para visita guiada-->
+    <color name="azulGuiada">#2196F3</color>
+    <color name="rojiso">#7DBBEC</color>
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:backgroundTint="@color/colorPrimaryDarkText"
+    app:cardCornerRadius="30dp">
+<!--
+apagar mi ubicacion
+Mostrar reportes de 5 KM
+Mostrar Drivers en 10 KM
+Estilo mapa
+modo viaje
+establecer ruta
+
+
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/degradado_derecho">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_largo_sin_fondo"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/modoviaje"
+               android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagenmodoviaje"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/viajeoff"
+                    app:riv_corner_radius="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modo viaje"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                    android:backgroundTint="@color/gris"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/establecerRuta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imagenmodoruta"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rutaoff"
+                    app:riv_corner_radius="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Establecer ruta"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                    android:backgroundTint="@color/gris"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/optPeligrosa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cate_peligro"
+                    app:riv_corner_radius="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Drivers"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+
+                    android:backgroundTint="@color/gris"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/estiloMapaDia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/mapadia"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/diamapa"
+                        app:riv_corner_radius="20dp"
+                        app:riv_border_width="2dp"
+                        app:riv_border_color="@color/grisClaro"/>
+
+                     <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mapa día"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                         android:textColor="@color/gris"
+                         android:backgroundTint="@color/gris"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/estiloMapaNoche"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+android:id="@+id/mapaNoche"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nochemapa"
+                    app:riv_corner_radius="20dp"
+                    app:riv_border_width="2dp"
+                    app:riv_border_color="@color/grisClaro"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mapa noche"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                    android:backgroundTint="@color/gris"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/estiloMapaAuto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mapaAuto"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/diaynochemapa"
+                    app:riv_corner_radius="20dp"
+                    app:riv_border_width="2dp"
+                    app:riv_border_color="@color/grisClaro"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/gris"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Automático"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+  <com.google.android.gms.ads.AdView
+            android:id="@+id/adsOpcionesMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1498245539124562/3514257493"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

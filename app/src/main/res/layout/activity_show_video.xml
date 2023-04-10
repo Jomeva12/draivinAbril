@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.activities.ShowVideo"
+    app:cardBackgroundColor="@color/fullBlack">
+
+    <LinearLayout
+        android:id="@+id/linearPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/pictureFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+
+
+       <FrameLayout
+            android:id="@+id/frameVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:visibility="gone">
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <View
+                android:id="@+id/btnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circular_view"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/gris"
+                android:alpha="0.7"/>
+            <ImageView
+                android:id="@+id/imageVideo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/play"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/fullBlack"
+    android:alpha="0.4"/>
+        <ImageView
+            android:id="@+id/atras"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"/>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

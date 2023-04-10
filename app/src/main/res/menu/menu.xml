@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/white"
+    >
+    <item
+        android:id="@+id/itemPerfil"
+        android:title="Mi perfil"
+     />
+    <item
+        android:id="@+id/laCiudad"
+        android:title="Mi ciudad"
+        android:icon="@drawable/email_24"
+        />
+    <item
+        android:id="@+id/cambiarCiudad"
+        android:title="Cambiar mi ciudad"
+        android:icon="@drawable/email_24"
+        />
+    <item
+        android:id="@+id/configReport"
+        android:title="Configuración reportes"
+        android:icon="@drawable/email_24"
+        />
+    <item
+        android:id="@+id/quieroserModerador"
+        android:title="Quiero ser moderador"
+        android:icon="@drawable/email_24"
+        />
+    <item
+        android:id="@+id/sugerir"
+        android:title="Enviar Sugerencias"
+        android:icon="@drawable/email_24"
+        />
+    <item
+        android:id="@+id/Compartir"
+        android:title="Compartir esta app"
+        android:icon="@drawable/email_24"
+        />
+    <item
+        android:id="@+id/politica"
+        android:title="Consultar política"
+        android:icon="@drawable/email_24"
+        />
+    <item
+        android:id="@+id/login"
+        android:title="Login"
+        />
+
+
+
+</menu>

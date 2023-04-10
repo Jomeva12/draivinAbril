@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/degradado_derecho"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_largo_sin_fondo" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDarkText"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="205dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:minHeight="48dp"
+                app:ccpDialog_backgroundColor="@color/white"
+                app:ccp_autoDetectCountry="true"
+                tools:ccp_contentColor="@color/gris"
+                tools:ccp_textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/editTextcelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_azul_redondo"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="16dp"
+                android:hint="Celular"
+                android:inputType="number"
+                android:maxLength="10"
+                android:minHeight="48dp"
+                android:padding="3dp"
+                android:text=""
+                android:textColorHint="#98A5AA"
+                android:textColor="@color/gris"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/afirmativo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/boton_redondo"
+            android:text="Enviar código"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/colorPrimary2" />
+        <!--  <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+
+              <com.airbnb.lottie.LottieAnimationView
+                  android:id="@+id/lottieAnimationViewModoAlerta"
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:layout_gravity="center|start"
+                  app:lottie_autoPlay="true"
+                  app:lottie_fileName="buscando.json"
+                  app:lottie_imageAssetsFolder="assets"
+                  app:lottie_loop="true"
+                  android:visibility="visible"/>
+
+              <TextView
+                  android:id="@+id/textVie"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+
+                  android:text="¿Desea crear una consulta tomando un punto especifico en el mapa?"
+                  android:textColor="@color/colorPrimaryText"
+                  android:textSize="19dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:orientation="horizontal">
+
+              <Button
+                  android:id="@+id/afirmativo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_weight="1"
+                  android:background="@drawable/boton_redondo"
+                  android:text="SI"
+                  android:textColor="@color/white"
+                  app:backgroundTint="@color/colorPrimary2" />
+
+              <Button
+                  android:id="@+id/negativo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="5dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_weight="1"
+                  android:background="@drawable/boton_redondo"
+                  android:text="No"
+                  android:textColor="@color/white"
+                  app:backgroundTint="@color/colorPrimaryText" />
+          </LinearLayout>-->
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

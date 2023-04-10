@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorazulfondo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/atras"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_back" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/fotoPerfil"
+            android:layout_width="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="30dp"
+            android:clickable="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombreUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textViewRelativeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--Frame Mapa y descripcion-->
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLike"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:elevation="30dp"
+            app:cardCornerRadius="50dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/reaccionLike"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:gravity="end"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="like_action.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
+            <LinearLayout
+                android:id="@+id/linearLikePropina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgLike"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/corazon_like" />
+
+                <TextView
+                    android:id="@+id/NmegustaPropina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:text="10"
+                    android:textColor="@color/gris"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapViewPropina"
+            android:layout_width="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <!--sombra-->
+        <LinearLayout
+            android:id="@+id/linearTop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/degradado_invertido"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:minHeight="50dp"
+            android:orientation="vertical">
+            <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                android:id="@+id/descripcionpropina"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+              android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                emojicon:emojiconSize="30sp"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+        <!--fin sombra-->
+
+    </FrameLayout>
+<!--Linear recycler-->
+    <LinearLayout
+        android:id="@+id/linearRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+       <com.google.android.gms.ads.AdView
+            android:id="@+id/activity_mapa_propinaAds"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-1498245539124562/9153596987"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reciclerViewComentarioMapaPriopina"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <!--Linear comentario-->
+    <LinearLayout
+        android:id="@+id/linearComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:translationZ="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorazulfondo">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+
+                android:backgroundTint="@color/grisClaro"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/imagenEmoji"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="bottom"
+                    android:src="@drawable/ic_emoji" />
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                    android:id="@+id/comentario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/grisClaro"
+                    android:hint="Comentario"
+                    android:inputType="textMultiLine"
+                    android:textColor="#0E0E0E"
+                    android:textColorHint="#A3AEB3"
+                    emojicon:emojiconSize="25sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/publicarComentario"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/ic_send_blanco"
+                android:visibility="gone" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

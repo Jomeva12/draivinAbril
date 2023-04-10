@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hoja"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bottom"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/degradado_derecho">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_largo_sin_fondo"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grisClaro" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tipos de reporte"
+        android:textColor="@color/gris"
+        android:layout_marginTop="10dp"
+        android:textSize="27dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/optReten"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+               android:gravity="center"
+               android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/car_police"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retén"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                   />
+            </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/optCamara"
+               android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+               android:gravity="center"
+               android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cate_camara"
+                    app:riv_corner_radius="20dp"
+                  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:text="Cámara"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/optPeligrosa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cate_peligro"
+                    app:riv_corner_radius="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gris"
+                    android:text="Zona peligrosa"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/optBache"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cate_bache"
+                    app:riv_corner_radius="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vía mal estado bache"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/optCerrada"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cate_cerrada"
+                    app:riv_corner_radius="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vía cerrada"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/optAccidente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cate_accidente"
+                    app:riv_corner_radius="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:text="Accidente /trancón"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/optEspecial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cate_especial"
+                    app:riv_corner_radius="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reporte especial"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/gris"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grisClaro" />
+
+   <LinearLayout
+        android:id="@+id/PedirInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Texto descriptivo"
+            android:src="@drawable/ic_message"
+            app:tint="@color/colorPrimary2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/gris"
+            android:text="Pedir información en mapa"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alertarAtodos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Texto descriptivo"
+            android:src="@drawable/ic_person_azul"
+            app:tint="@color/colorPrimary2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Alertar a todos los Drivers en mi zona"
+            android:textColor="@color/gris"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/layout_opciones_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1498245539124562/1487979515"
+        />
+
+
+</LinearLayout>

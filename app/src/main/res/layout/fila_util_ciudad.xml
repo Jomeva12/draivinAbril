@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardPico"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginBottom="5dp"
+    android:backgroundTint="@color/white"
+    android:elevation="30dp"
+    app:cardCornerRadius="22dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Titulo"
+            android:textStyle="bold"
+            android:textColor="@color/gris"
+            android:textSize="25dp" />
+
+        <RelativeLayout
+            android:id="@+id/tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+
+                    android:elevation="10dp"
+                    app:cardCornerRadius="20dp">
+<!--Pico y placa-->
+                    <LinearLayout
+                        android:id="@+id/picoYPlacaLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4CAF50"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                android:text="Día"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Taxis"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Particular"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Motos"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Lunes"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/lunes_taxi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/lunes_particular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/lunes_motos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Martes"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/martes_taxi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/martes_particular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/martes_motos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Miércoles"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/miercoles_taxis"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/miercoles_particular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/miercoles_motos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Jueves"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/jueves_taxis"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/jueves_particular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/jueves_motos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Viernes"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/viernes_taxis"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/viernes_particular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                app:cardBackgroundColor="#FFEB3B"
+                                app:cardCornerRadius="5dp"
+                                app:civ_border_color="#CC0909"
+                                app:strokeColor="@color/fullBlack"
+                                app:strokeWidth="2dp">
+
+                                <TextView
+                                    android:id="@+id/viernes_motos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    
+                                    android:textColor="@color/gris"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+

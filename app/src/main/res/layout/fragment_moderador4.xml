@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorazulfondo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.activities.FragmentModerador4">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/fragmentfourModeradorAds"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/fui_transparent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1498245539124562/9939278622"/>
+    <ImageView
+        android:id="@+id/cerrarMensaje"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="10dp"
+        android:src="@drawable/x" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+
+        android:backgroundTint="#faf284"
+        android:elevation="10dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gris"
+                android:text="Califíca a los moderadores según su comportamiento, Como moderador podrás permitir el ingreso de otros moderadores que desean aportar al proyecto, ten en cuenta que trés moderadores deben aprobar la solicitud o rechazar." />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reciclerModeradoresPendientes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+  <!--  -->
+</FrameLayout>

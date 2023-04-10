@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="client_id_editado_po_mi" translatable="false">54468161676-6i653ercjjs6v976gka1e7ru3551bvhb.apps.googleusercontent.com</string>
+    <string name="hello_blank_fragment">Hola soy chat</string>
+    <string name="SpotTitulo">Espere un momento</string>
+    <string name="transitionName_picture">transitionnamepicture</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>

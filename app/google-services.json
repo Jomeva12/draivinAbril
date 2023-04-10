@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "54468161676",
+    "firebase_url": "https://driving-404f9-default-rtdb.firebaseio.com",
+    "project_id": "driving-404f9",
+    "storage_bucket": "driving-404f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54468161676:android:97cb03a7e218fb7b1dcba9",
+        "android_client_info": {
+          "package_name": "com.jomeva.driving"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54468161676-dosdialklm2tnbf6s673899ku7p84qev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jomeva.driving",
+            "certificate_hash": "d27d5e64d893e3e1352e93dd718ea0b97e938edb"
+          }
+        },
+        {
+          "client_id": "54468161676-6i653ercjjs6v976gka1e7ru3551bvhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqrEVozXDLM0dirOADV5UVwEmc8I6S8qc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54468161676-6i653ercjjs6v976gka1e7ru3551bvhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
